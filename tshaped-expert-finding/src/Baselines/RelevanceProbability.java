@@ -217,7 +217,7 @@ public class RelevanceProbability {
 
     public void CalculateProbabilitySAGivenExpert(Path answerPath, String skillArea, ArrayList<String> tagsOfSkillArea, String dataSetName, double lambda, String result_path, String probabilities_path, HashMap<String, Double> term_probabilities) throws IOException, ParseException {
         HashMap<String, HashMap<Integer, Double>> term_doc_probabilities = loadTermDocProbabilities(probabilities_path, tagsOfSkillArea);
-        PrintWriter out = new PrintWriter(result_path + skillArea + "_balog_sorted_user_probability.txt");
+        PrintWriter out = new PrintWriter(result_path + skillArea + "_sorted_user_probability.txt");
 
         LinkedHashMap<Integer, Double> UId_probabilitySAGivenExpert = new LinkedHashMap<>();
         Searcher searcher = new Searcher(answerPath, "Body");

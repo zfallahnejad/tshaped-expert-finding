@@ -66,7 +66,7 @@ public class DBA {
         LinkedHashMap<String, LinkedHashMap<Integer, Double>> SA__UId_ProbabilityRGivenExpertAndSA = new LinkedHashMap<>();
         for (Map.Entry<String, ArrayList<String>> item : SkillArea_TagsList.entrySet()) {
             String skillArea = item.getKey();
-            String balog_dbm_path = RelevanceProbabilityPath + skillArea + "_balog_sorted_user_probability.txt";
+            String balog_dbm_path = RelevanceProbabilityPath + skillArea + "_sorted_user_probability.txt";
             LinkedHashMap<Integer, Double> SortedUId_probabilitySAGivenExpert = load_SA_SortedUId_probability(balog_dbm_path, dataSetName, skillArea, applySoftMax);
             SA__UId_ProbabilityRGivenExpertAndSA.put(skillArea, SortedUId_probabilitySAGivenExpert);
             System.gc();

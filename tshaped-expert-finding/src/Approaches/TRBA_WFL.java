@@ -125,7 +125,7 @@ public class TRBA_WFL {
         for (Map.Entry<String, ArrayList<String>> item : SkillArea_TagsList.entrySet()) {
             String skillArea = item.getKey();
             System.out.println("skillArea: " + skillArea);
-            String balog_dbm_path = RelevanceProbabilityPath + skillArea + "_balog_sorted_user_probability.txt";
+            String balog_dbm_path = RelevanceProbabilityPath + skillArea + "_sorted_user_probability.txt";
             LinkedHashMap<Integer, Double> SortedUId_probabilitySAGivenExpert = load_SA_SortedUId_probability(balog_dbm_path);
             SA__UId_ProbabilityRGivenExpertAndSA.put(skillArea, SortedUId_probabilitySAGivenExpert);
             System.gc();

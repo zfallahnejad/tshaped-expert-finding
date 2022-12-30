@@ -212,7 +212,7 @@ public class RelevanceProbability {
     }
 
     public void TranslationLM(Path answerPath, String skillArea, ArrayList<String> tagsOfSkillArea, String dataSetName, double lambda, String result_path, HashMap<String, Double> term_probabilities, HashMap<String, ArrayList<ProbTranslate>> tag_translations) throws IOException, ParseException {
-        PrintWriter out = new PrintWriter(result_path + skillArea + "_balog_sorted_user_probability.txt");
+        PrintWriter out = new PrintWriter(result_path + skillArea + "_sorted_user_probability.txt");
 
         LinkedHashMap<Integer, Double> UId_probabilitySAGivenExpert = new LinkedHashMap<>();
         Searcher searcher = new Searcher(answerPath, "Body");
