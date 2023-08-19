@@ -17,7 +17,8 @@ import java.util.*;
 public class RelevanceProbability {
 
     public static void main(String[] args) throws IOException, ParseException {
-        String dataSetName, answersIndexPath, skillAreasPath, result_path, astm1_translations, astm2_translations;
+        String dataSetName, answersIndexPath, skillAreasPath, result_path;
+        String astm1_translations, astm2_translations, sast_translations;
 
         RelevanceProbability rp = new RelevanceProbability();
 
@@ -36,6 +37,12 @@ public class RelevanceProbability {
             result_path = "./files/Relevance/TRBA2/" + dataSetName + "/top" + t + "/";
             rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, astm2_translations, t);
         }
+        sast_translations = "./translations/" + dataSetName + "/sast.txt";
+        for (int t : Arrays.asList(1, 2, 3, 4, 5)) {
+            System.out.println("top: " + t);
+            result_path = "./files/Relevance/SAST/" + dataSetName + "/top" + t + "/";
+            rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, sast_translations, t);
+        }
 
         dataSetName = "android";
         answersIndexPath = "./files/Index/android/Answers";
@@ -52,6 +59,12 @@ public class RelevanceProbability {
             result_path = "./files/Relevance/TRBA2/" + dataSetName + "/top" + t + "/";
             rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, astm2_translations, t);
         }
+        sast_translations = "./translations/" + dataSetName + "/sast.txt";
+        for (int t : Arrays.asList(1, 2, 3, 4, 5)) {
+            System.out.println("top: " + t);
+            result_path = "./files/Relevance/SAST/" + dataSetName + "/top" + t + "/";
+            rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, sast_translations, t);
+        }
 
         dataSetName = "c#";
         answersIndexPath = "./files/Index/c#/Answers";
@@ -67,6 +80,12 @@ public class RelevanceProbability {
             System.out.println("top: " + t);
             result_path = "./files/Relevance/TRBA2/" + dataSetName + "/top" + t + "/";
             rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, astm2_translations, t);
+        }
+        sast_translations = "./translations/" + dataSetName + "/sast.txt";
+        for (int t : Arrays.asList(1, 2, 3, 4, 5)) {
+            System.out.println("top: " + t);
+            result_path = "./files/Relevance/SAST/" + dataSetName + "/top" + t + "/";
+            rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, sast_translations, t);
         }
     }
 

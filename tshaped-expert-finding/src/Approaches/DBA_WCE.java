@@ -1,7 +1,8 @@
 package Approaches;
 
-import Utils.*;
 import Evaluation.*;
+import Utils.GoldenUsersShapes;
+import Utils.Searcher;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.ScoreDoc;
@@ -40,7 +41,7 @@ public class DBA_WCE {
         answerIndexPath = "./files/Index/c#/Answers";
         questionIndexPath = "./files/Index/c#/Questions";
         skillAreasPath = "./files/Golden/c#/C#Cluster.csv";
-        skillShapesXMLPath = "./files/Golden/android/AndroidSkillShapes.xml";
+        skillShapesXMLPath = "./files/Golden/c#/C#SkillShapes.xml";
         RelevanceProbabilityPath = "./files/Relevance/DBA/" + dataSetName + "/";
         ResultPath = "./files/Result/" + dataSetName + "/DBA_WCE/";
         e.start(skillAreasPath, skillShapesXMLPath, questionIndexPath, answerIndexPath, RelevanceProbabilityPath, ResultPath);

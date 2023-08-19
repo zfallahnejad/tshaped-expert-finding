@@ -24,7 +24,7 @@ public class TRBA_WCE {
         questionIndexPath = "./files/Index/java/Questions";
         skillAreasPath = "./files/Golden/java/javaCluster.csv";
         skillShapesXMLPath = "./files/Golden/java/JavaSkillShapes.xml";
-        for (String model_type : Arrays.asList("TRBA1", "TRBA2")) {
+        for (String model_type : Arrays.asList("TRBA1", "TRBA2", "SAST")) {
             for (int t : Arrays.asList(1, 2, 3, 4, 5)) {
                 try {
                     RelevanceProbabilityPath = "./files/Relevance/" + model_type + "/" + dataSetName + "/top" + t + "/";
@@ -42,7 +42,7 @@ public class TRBA_WCE {
         questionIndexPath = "./files/Index/android/Questions";
         skillAreasPath = "./files/Golden/android/AndroidCluster.csv";
         skillShapesXMLPath = "./files/Golden/android/AndroidSkillShapes.xml";
-        for (String model_type : Arrays.asList("TRBA1", "TRBA2")) {
+        for (String model_type : Arrays.asList("TRBA1", "TRBA2", "SAST")) {
             for (int t : Arrays.asList(1, 2, 3, 4, 5)) {
                 try {
                     RelevanceProbabilityPath = "./files/Relevance/" + model_type + "/" + dataSetName + "/top" + t + "/";
@@ -59,8 +59,8 @@ public class TRBA_WCE {
         answerIndexPath = "./files/Index/c#/Answers";
         questionIndexPath = "./files/Index/c#/Questions";
         skillAreasPath = "./files/Golden/c#/C#Cluster.csv";
-        skillShapesXMLPath = "./files/Golden/android/AndroidSkillShapes.xml";
-        for (String model_type : Arrays.asList("TRBA1", "TRBA2")) {
+        skillShapesXMLPath = "./files/Golden/c#/C#SkillShapes.xml";
+        for (String model_type : Arrays.asList("TRBA1", "TRBA2", "SAST")) {
             for (int t : Arrays.asList(1, 2, 3, 4, 5)) {
                 try {
                     RelevanceProbabilityPath = "./files/Relevance/" + model_type + "/" + dataSetName + "/top" + t + "/";

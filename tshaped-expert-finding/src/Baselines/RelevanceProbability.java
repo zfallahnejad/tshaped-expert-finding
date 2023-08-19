@@ -24,21 +24,21 @@ public class RelevanceProbability {
         dataSetName = "java";
         answersIndexPath = "./files/Index/java/Answers";
         skillAreasPath = "./files/Golden/java/javaCluster.csv";
-        probabilities_path = "./files/RelevanceNew/" + dataSetName + "/";
+        probabilities_path = "./files/Relevance/" + dataSetName + "/";
         result_path = "./files/Relevance/DBA/" + dataSetName + "/";
         rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, probabilities_path);
 
         dataSetName = "android";
         answersIndexPath = "./files/Index/android/Answers";
         skillAreasPath = "./files/Golden/android/AndroidCluster.csv";
-        probabilities_path = "./files/RelevanceNew/" + dataSetName + "/";
+        probabilities_path = "./files/Relevance/" + dataSetName + "/";
         result_path = "./files/Relevance/DBA/" + dataSetName + "/";
         rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, probabilities_path);
 
         dataSetName = "c#";
         answersIndexPath = "./files/Index/c#/Answers";
         skillAreasPath = "./files/Golden/c#/C#Cluster.csv";
-        probabilities_path = "./files/RelevanceNew/" + dataSetName + "/";
+        probabilities_path = "./files/Relevance/" + dataSetName + "/";
         result_path = "./files/Relevance/DBA/" + dataSetName + "/";
         rp.start(dataSetName, answersIndexPath, skillAreasPath, result_path, probabilities_path);
     }
